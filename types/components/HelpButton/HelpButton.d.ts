@@ -1,6 +1,6 @@
 import React from 'react';
-export interface ButtonProps {
-    label: string;
+interface HelpButtonProps {
+    showModal: (arg: boolean) => void;
 }
-declare const HelpButton: (props: ButtonProps) => React.JSX.Element;
-export default HelpButton;
+export default function HelpButton({ showModal }: HelpButtonProps): React.JSX.Element;
+export {};
