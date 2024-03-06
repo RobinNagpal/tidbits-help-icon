@@ -1,2 +1,3 @@
-import React from "react";
-export declare const MyComponent: () => React.JSX.Element;
+import React from 'react';
+declare const MyComponent: () => React.JSX.Element;
+export default MyComponent;
