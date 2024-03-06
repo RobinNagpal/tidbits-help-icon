@@ -2,12 +2,14 @@
 //   return num1 + num2;
 // }
 
-import React from "react";
+import React from 'react';
 
 // module.exports = sum;
 
 // export * from './components';
 
-export const MyComponent = () => {
+const MyComponent = () => {
   return <div>Hello word</div>;
 };
+
+export default MyComponent;
