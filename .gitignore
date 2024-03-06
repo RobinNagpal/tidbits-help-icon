@@ -43,3 +43,6 @@ data
 
 # Sentry Config File
 .sentryclirc
+
+# Auto generated files
+dist
