@@ -17,6 +17,8 @@
   ],
   "author": "robin",
   "license": "ISC",
+  "dependencies": {},
+  "peerDependencies": {},
   "devDependencies": {
     "@types/node": "^20.11.24",
     "esbuild": "^0.20.1",
