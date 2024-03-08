@@ -1,6 +1,6 @@
 {
   "name": "tidbits-help-icon",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "",
   "module": "dist/index.esm.js",
   "main": "dist/index.js",
