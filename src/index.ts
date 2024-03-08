@@ -1,4 +1,4 @@
-function HelpButton() {
+function HelpButton(url: string) {
   var button = document.createElement('button');
   button.innerHTML = '? Help';
   button.style.position = 'fixed';
@@ -97,7 +97,7 @@ function HelpButton() {
 
   // Create iframe
   var iframe = document.createElement('iframe');
-  iframe.setAttribute('src', 'https://arbitrum.education/tidbit-collections'); // Set the src to your desired URL
+  iframe.setAttribute('src', url); // Set the src to your desired URL
   iframe.style.width = '100%';
   iframe.style.height = '100%';
   iframe.style.border = 'none';
