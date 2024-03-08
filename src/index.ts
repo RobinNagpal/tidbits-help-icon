@@ -1,4 +1,5 @@
 function HelpButton(url: string) {
+  if (typeof Window === 'undefined') return;
   var button = document.createElement('button');
   button.innerHTML = '? Help';
   button.style.position = 'fixed';
