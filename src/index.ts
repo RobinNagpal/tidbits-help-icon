@@ -1,4 +1,4 @@
-function HelpButton() {
+function HelpButton(url: string) {
   var button = document.createElement('button');
   button.innerHTML = '? Help';
   button.style.position = 'fixed';
@@ -8,10 +8,10 @@ function HelpButton() {
 
   // Style the button as needed
   button.style.padding = '10px 25px';
-  button.style.background = 'linear-gradient(to right, red, blue)';
+  button.style.background = '#808080';
   button.style.color = 'white';
   button.style.border = 'none';
-  button.style.borderRadius = '20px';
+  button.style.borderRadius = '20px'; // Adjust the border-radius to match the image
   button.style.cursor = 'pointer';
   button.style.boxShadow = '0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08)'; // Add a subtle shadow
   button.style.outline = 'none';
@@ -57,22 +57,21 @@ function HelpButton() {
 
   // Create modal content container
   var modalContent = document.createElement('div');
-  modalContent.style.width = '80%';
-  modalContent.style.height = '85vh';
+  modalContent.style.width = '100%';
+  modalContent.style.height = '100%';
   modalContent.style.background = 'white';
-  modalContent.style.padding = '20px';
+  modalContent.style.paddingTop = '60px';
   modalContent.style.borderRadius = '10px';
 
   // Create close button element
   var closeButton = document.createElement('button');
   closeButton.innerHTML = '&times;'; // HTML entity for 'X'
   closeButton.style.position = 'absolute';
-  closeButton.style.top = '10px';
-  closeButton.style.right = '10px';
+  closeButton.style.top = '-5px';
+  closeButton.style.right = '15px';
   closeButton.style.zIndex = '1001';
-  closeButton.style.padding = '5px 10px';
   closeButton.style.background = 'transparent';
-  closeButton.style.color = 'white';
+  closeButton.style.color = 'black';
   closeButton.style.border = 'none';
   closeButton.style.fontSize = '44px'; // Make 'X' larger
   closeButton.style.cursor = 'pointer';
@@ -97,7 +96,7 @@ function HelpButton() {
 
   // Create iframe
   var iframe = document.createElement('iframe');
-  iframe.setAttribute('src', 'https://arbitrum.education/tidbit-collections'); // Set the src to your desired URL
+  iframe.setAttribute('src', url); // Set the src to your desired URL
   iframe.style.width = '100%';
   iframe.style.height = '100%';
   iframe.style.border = 'none';

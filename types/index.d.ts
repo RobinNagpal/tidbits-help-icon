@@ -1,2 +1,2 @@
-declare function HelpButton(): void;
+declare function HelpButton(url: string): void;
 export default HelpButton;
